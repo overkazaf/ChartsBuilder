@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChartBuilder</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.gridster.min.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<h2><button id="add">Add</button></h2>
+	<div class="gridster" id="main">
+		<ul></ul>
+	</div>
+	<script type="text/javascript" src="javascript/lib/requirejs.js"></script>
+	<script type="text/javascript">
+		require.config({
+			baseUrl : 'javascript/lib',
+			paths : {
+				'app' : '../app',
+				'Dispatcher' : '../dispatcher',
+				'jquery' : 'jquery.min',
+				'gridster' : 'jquery.gridster.min',
+				'ToolBar' : '../modules/toolbar',
+				'ControlPanel' : '../modules/ControlPanel',
+				'PlayGround' : '../modules/PlayGround'
+			}
+		});
+		require(['app'], function (APP){
+			APP.init();
+		});
+	</script>
+</body>
+</html>
