@@ -1,0 +1,227 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'font-awesome@3.2.1',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.8.3
+3 info using node@v4.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData font-awesome@3.2.1
+8 silly fetchNamedPackageData font-awesome
+9 silly mapToRegistry name font-awesome
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'font-awesome',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'font-awesome',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+14 verbose get https://registry.npmjs.org/font-awesome not expired, no request
+15 silly install normalizeTree
+16 silly loadCurrentTree Finishing
+17 silly loadIdealTree Starting
+18 silly install loadIdealTree
+19 silly cloneCurrentTree Starting
+20 silly install cloneCurrentTreeToIdealTree
+21 silly cloneCurrentTree Finishing
+22 silly loadShrinkwrap Starting
+23 silly install loadShrinkwrap
+24 silly loadShrinkwrap Finishing
+25 silly loadAllDepsIntoIdealTree Starting
+26 silly install loadAllDepsIntoIdealTree
+27 silly resolveWithNewModule font-awesome@3.2.1 checking installable status
+28 silly cache add args [ 'font-awesome@3.2.1', null ]
+29 verbose cache add spec font-awesome@3.2.1
+30 silly cache add parsed spec Result {
+30 silly cache add   raw: 'font-awesome@3.2.1',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'font-awesome',
+30 silly cache add   rawSpec: '3.2.1',
+30 silly cache add   spec: '3.2.1',
+30 silly cache add   type: 'version' }
+31 silly addNamed font-awesome@3.2.1
+32 verbose addNamed "3.2.1" is a plain semver version for font-awesome
+33 silly mapToRegistry name font-awesome
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'font-awesome',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'font-awesome',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+38 verbose addNameVersion registry:https://registry.npmjs.org/font-awesome not in flight; fetching
+39 verbose get https://registry.npmjs.org/font-awesome not expired, no request
+40 silly mapToRegistry name font-awesome
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry data Result {
+43 silly mapToRegistry   raw: 'font-awesome',
+43 silly mapToRegistry   scope: null,
+43 silly mapToRegistry   name: 'font-awesome',
+43 silly mapToRegistry   rawSpec: '',
+43 silly mapToRegistry   spec: 'latest',
+43 silly mapToRegistry   type: 'tag' }
+44 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+45 verbose addRemoteTarball https://registry.npmjs.org/font-awesome/-/font-awesome-3.2.1.tgz not in flight; adding
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/font-awesome/-/font-awesome-3.2.1.tgz',
+46 verbose addRemoteTarball   'b7c5ab7906fceaef182e3f51169b7943bd1e3668' ]
+47 info retry fetch attempt 1 at 15:00:00
+48 info attempt registry request try #1 at 15:00:00
+49 http fetch GET https://registry.npmjs.org/font-awesome/-/font-awesome-3.2.1.tgz
+50 verbose request id 957d642dc3c12bb8
+51 http fetch 200 https://registry.npmjs.org/font-awesome/-/font-awesome-3.2.1.tgz
+52 silly fetchAndShaCheck shasum b7c5ab7906fceaef182e3f51169b7943bd1e3668
+53 verbose addTmpTarball /var/folders/l8/11270r955x922bx9z622cqj40000gn/T/npm-11153-df2bfcc9/registry.npmjs.org/font-awesome/-/font-awesome-3.2.1.tgz not in flight; adding
+54 verbose addTmpTarball already have metadata; skipping unpack for font-awesome@3.2.1
+55 verbose correctMkdir /Users/overkazaf/.npm correctMkdir not in flight; initializing
+56 silly cache afterAdd font-awesome@3.2.1
+57 verbose afterAdd /Users/overkazaf/.npm/font-awesome/3.2.1/package/package.json not in flight; writing
+58 verbose correctMkdir /Users/overkazaf/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /Users/overkazaf/.npm/font-awesome/3.2.1/package/package.json written
+60 silly fetchNamedPackageData jekyll
+61 silly mapToRegistry name jekyll
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'jekyll',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   name: 'jekyll',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/jekyll
+66 silly fetchNamedPackageData lessc
+67 silly mapToRegistry name lessc
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry data Result {
+70 silly mapToRegistry   raw: 'lessc',
+70 silly mapToRegistry   scope: null,
+70 silly mapToRegistry   name: 'lessc',
+70 silly mapToRegistry   rawSpec: '',
+70 silly mapToRegistry   spec: 'latest',
+70 silly mapToRegistry   type: 'tag' }
+71 silly mapToRegistry uri https://registry.npmjs.org/lessc
+72 verbose request uri https://registry.npmjs.org/jekyll
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 15:00:02
+75 http request GET https://registry.npmjs.org/jekyll
+76 verbose request uri https://registry.npmjs.org/lessc
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 15:00:02
+79 http request GET https://registry.npmjs.org/lessc
+80 http 404 https://registry.npmjs.org/lessc
+81 verbose headers { 'content-type': 'application/json',
+81 verbose headers   'cache-control': 'max-age=0',
+81 verbose headers   'content-length': '2',
+81 verbose headers   'accept-ranges': 'bytes',
+81 verbose headers   date: 'Mon, 27 Jun 2016 07:00:03 GMT',
+81 verbose headers   via: '1.1 varnish',
+81 verbose headers   age: '0',
+81 verbose headers   connection: 'keep-alive',
+81 verbose headers   'x-served-by': 'cache-hkg6820-HKG',
+81 verbose headers   'x-cache': 'MISS',
+81 verbose headers   'x-cache-hits': '0',
+81 verbose headers   'x-timer': 'S1467010802.947632,VS0,VE193',
+81 verbose headers   vary: 'Accept-Encoding' }
+82 silly get cb [ 404,
+82 silly get   { 'content-type': 'application/json',
+82 silly get     'cache-control': 'max-age=0',
+82 silly get     'content-length': '2',
+82 silly get     'accept-ranges': 'bytes',
+82 silly get     date: 'Mon, 27 Jun 2016 07:00:03 GMT',
+82 silly get     via: '1.1 varnish',
+82 silly get     age: '0',
+82 silly get     connection: 'keep-alive',
+82 silly get     'x-served-by': 'cache-hkg6820-HKG',
+82 silly get     'x-cache': 'MISS',
+82 silly get     'x-cache-hits': '0',
+82 silly get     'x-timer': 'S1467010802.947632,VS0,VE193',
+82 silly get     vary: 'Accept-Encoding' } ]
+83 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/lessc
+83 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+83 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:241:14)
+83 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+83 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+83 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+83 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+83 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+83 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+83 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+83 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+83 silly fetchPackageMetaData  error for lessc@1.3.3 { [Error: Registry returned 404 for GET on https://registry.npmjs.org/lessc] pkgid: 'lessc', statusCode: 404, code: 'E404' }
+84 http 200 https://registry.npmjs.org/jekyll
+85 silly get cb [ 200,
+85 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+85 silly get     etag: '"6B3FHP7MQ0I56ZRAR3XMO4LYW"',
+85 silly get     'content-type': 'application/json',
+85 silly get     'content-encoding': 'gzip',
+85 silly get     'cache-control': 'max-age=300',
+85 silly get     'content-length': '1903',
+85 silly get     'accept-ranges': 'bytes',
+85 silly get     date: 'Mon, 27 Jun 2016 07:00:03 GMT',
+85 silly get     via: '1.1 varnish',
+85 silly get     age: '0',
+85 silly get     connection: 'keep-alive',
+85 silly get     'x-served-by': 'cache-hkg6823-HKG',
+85 silly get     'x-cache': 'MISS',
+85 silly get     'x-cache-hits': '0',
+85 silly get     'x-timer': 'S1467010802.945229,VS0,VE779',
+85 silly get     vary: 'Accept-Encoding' } ]
+86 verbose get saving jekyll to /Users/overkazaf/.npm/registry.npmjs.org/jekyll/.cache.json
+87 verbose correctMkdir /Users/overkazaf/.npm correctMkdir not in flight; initializing
+88 silly fetchPackageMetaData Error: No compatible version found: jekyll@1.0.2
+88 silly fetchPackageMetaData Valid install targets:
+88 silly fetchPackageMetaData 3.0.0-beta1
+88 silly fetchPackageMetaData
+88 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+88 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+88 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+88 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+88 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+88 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+88 silly fetchPackageMetaData  error for jekyll@1.0.2 [Error: No compatible version found: jekyll@1.0.2
+88 silly fetchPackageMetaData Valid install targets:
+88 silly fetchPackageMetaData 3.0.0-beta1
+88 silly fetchPackageMetaData ]
+89 silly rollbackFailedOptional Starting
+90 silly rollbackFailedOptional Finishing
+91 silly runTopLevelLifecycles Starting
+92 silly runTopLevelLifecycles Finishing
+93 silly install printInstalled
+94 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/lessc
+94 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+94 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:241:14)
+94 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+94 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+94 verbose stack     at emitTwo (events.js:87:13)
+94 verbose stack     at Request.emit (events.js:172:7)
+94 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+94 verbose stack     at emitOne (events.js:82:20)
+94 verbose stack     at Request.emit (events.js:169:7)
+94 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+95 verbose statusCode 404
+96 verbose pkgid lessc
+97 verbose cwd /Users/overkazaf/Desktop/codes/git/ChartsBuilder
+98 error Darwin 15.4.0
+99 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "font-awesome@3.2.1" "--save-dev"
+100 error node v4.1.0
+101 error npm  v3.8.3
+102 error code E404
+103 error 404 Registry returned 404 for GET on https://registry.npmjs.org/lessc
+104 error 404
+105 error 404 'lessc' is not in the npm registry.
+106 error 404 You should bug the author to publish it (or use the name yourself!)
+107 error 404 It was specified as a dependency of 'font-awesome'
+108 error 404 Note that you can also install from a
+109 error 404 tarball, folder, http url, or git url.
+110 verbose exit [ 1, true ]

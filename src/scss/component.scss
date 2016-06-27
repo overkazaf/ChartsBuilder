@@ -1,0 +1,83 @@
+@mixin trans($desc){
+   transition: $desc;
+   -webkit-transition: $desc;
+   -moz-transition: $desc;
+   -ms-transition: $desc;
+   -o-transition: $desc;
+}
+
+@mixin borderRadius ($px:5px) {
+	border-radius:$px;
+	-webkit-border-radius:$px;
+	-moz-border-radius:$px;
+	-ms-border-radius:$px;
+	-o-border-radius:$px;
+}
+
+@function px2rem ($px, $fontBase:16) {
+	@return $px / $fontBase * 1rem;
+}
+
+
+
+$btn-default-color: #2C3E50;
+$btn-primary-color: #16A085;
+$btn-success-color: #27AE60;
+$btn-info-color: #2980B9;
+$btn-danger-color: #C0392B;
+$btn-warning-color: #F39C12;
+$btn-inverse-color: #2C3E50;
+$btn-disabled-color: #BDC3C7;
+
+
+$btn-default-hover-color: #34495E;
+$btn-primary-hover-color: #1ABC9C;
+$btn-success-hover-color: #2ECC71;
+$btn-info-hover-color: #3498DB;
+$btn-danger-hover-color: #E74C3C;
+$btn-warning-hover-color: #F1C40F;
+$btn-inverse-hover-color: #34495E;
+$btn-disabled-hover-color: #ECF0F1;
+.btn {
+	display: inline-block;
+	margin: 5px;
+	font-size: 14px;
+	height: px2rem(42);
+	line-height: px2rem(42);
+	min-width: px2rem(145);
+	width: auto;
+	text-align: center;
+	background: $btn-default-color;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	color: #fff;
+	@include borderRadius(4px);
+	@include trans(all ease-in-out .3s);
+
+	&:hover {
+		background: $btn-default-hover-color;
+	}
+}
+
+$btn-type-list: 
+(default $btn-default-color $btn-default-hover-color) 
+(primary $btn-primary-color $btn-primary-hover-color) 
+(success $btn-success-color $btn-success-hover-color) 
+(info $btn-info-color $btn-info-hover-color) 
+(danger $btn-danger-color $btn-danger-hover-color) 
+(warning $btn-warning-color $btn-warning-hover-color) 
+(inverse $btn-inverse-color $btn-inverse-hover-color) 
+(disabled $btn-disabled-color $btn-disabled-hover-color);
+
+@each $btn-type, $btn-color, $btn-hover-color in $btn-type-list {
+  .btn-#{$btn-type} {
+	background: $btn-color;
+		&:hover {
+			background: $btn-hover-color;
+		}
+	}
+}
+
+
+

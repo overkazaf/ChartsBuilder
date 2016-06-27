@@ -3,19 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ChartBuilder</title>
-	<link rel="stylesheet" type="text/css" href="css/jquery.gridster.min.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css">
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="dist/minified/css/jquery.gridster.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/minified/css/app.css">
+	<link rel="stylesheet" type="text/css" href="dist/minified/css/component.css">
 </head>
 <body>
-	<h2><button id="add">Add</button></h2>
-	<div class="gridster" id="main">
-		<ul></ul>
-	</div>
-	<script type="text/javascript" src="javascript/lib/requirejs.js"></script>
+	<app>
+		<toolbar id="toolbar">
+		</toolbar>
+		<view>
+			<control id="control">
+				<button id="addLayout" class="btn btn-default">Add Layout</button>
+				<button class="btn btn-success">Animation</button>
+				<button class="btn btn-info">Action</button>
+				<button class="btn btn-disabled">Echarts</button>
+				<button class="btn btn-warning">Data Binding</button>
+				<button class="btn btn-danger">Parse CSV</button>
+				<button class="btn btn-inverse">component</button>
+			</control>
+			<playground id="playGround" class="gridster">
+				<ul></ul>
+			</playground>
+		</view>	
+	</app>
+	<script type="text/javascript" src="src/javascript/lib/requirejs.js"></script>
 	<script type="text/javascript">
 		require.config({
-			baseUrl : 'javascript/lib',
+			baseUrl : 'src/javascript/lib',
 			paths : {
 				'app' : '../app',
 				'Dispatcher' : '../dispatcher',
