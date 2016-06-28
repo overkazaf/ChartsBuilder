@@ -43,8 +43,8 @@ gulp.task('browser-sync',function(){
  */
 gulp.task('sass', function (){
 	console.log('starting sass task...');
-	return gulp.src('src/scss/**/*.scss')
-			.pipe(sass())
+	return gulp.src('src/scss/*.scss')
+			.pipe(sass({outputStyle: 'compressed'}))
 			.pipe(gulp.dest('dist/css'));
 });
 

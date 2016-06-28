@@ -1,3 +1,13 @@
+@mixin trans($desc){
+   transition: $desc;
+   -webkit-transition: $desc;
+   -moz-transition: $desc;
+   -ms-transition: $desc;
+   -o-transition: $desc;
+}
+
+$gray : #666;
+
 html {
 	width: 100%!important;
 	height: 100%!important;
@@ -10,6 +20,7 @@ body {
 	width: 100%!important;
 	height: 100%!important;
 	overflow: hidden;
+	font-family: 'Microsoft Yahei';
 }
 app, toolbar, control, playground {
 	display: block;
@@ -35,6 +46,7 @@ app {
 		left: 0;
 		top: 0;
 		z-index: 2;
+		width: 100%;
 		height: 32px;
 		line-height: 32px;
 		background: #eee;
@@ -43,7 +55,7 @@ app {
 			width: 80px;
 			text-align: center;
 			cursor: pointer;
-			background: #ccc;
+			background: #eee;
 			display: inline-block;
 
 			transition: all ease-in-out .3s;
@@ -52,7 +64,7 @@ app {
 			-ms-transition: all ease-in-out .3s;
 
 			&:hover {
-				background: #eee;
+				background: darken(#eee, 10%);
 				font-weight: bold;
 			}
 		}
@@ -61,13 +73,12 @@ app {
 	> view {
 		position: absolute;
 		left:0;top:0;
-		padding-top: 32px;
 		width: 100%;
 		min-width: 960px;
 		height: 100%;
 	
 		control, playground {
-			
+			padding-top: 32px;
 			height: 100%;
 			box-sizing: border-box;
 			background: #eee;
@@ -77,6 +88,7 @@ app {
 		> control {
 			float: left;
 			width: 25%;
+			border-right: 1px solid #666;
 			background: #999;
 
 
@@ -85,16 +97,45 @@ app {
 				padding: 0;
 				list-style-type: none;
 				.accordion-item {
-					background: #09f;
+					background: $gray;
 					text-align: center;
 					line-height: 36px;
+					border-bottom: 1px solid #222;
+					box-shadow: 0 0 3px #000;
 					color: #fff;
 					cursor:pointer;
+					@include trans(all ease-in-out .6s);
 
-						
+					&:hover {
+
+						background: darken($gray, 14%);
+
+						.accordion-title {
+							color: #aaff00;
+						}
+						.accordion-container {
+							height:auto;
+						}
+					}
+					
+
+					.accordion-title {
+						margin:0;
+						padding:0;
+
+						.dir-icon {
+							float:right;
+							margin-right: 4px;
+							height: 36px;
+							line-height: 36px;
+						}
+					}
 
 					.accordion-container {
-						display: none;
+						@include trans(all ease-in-out 1s);
+						background: #e5e5e5;
+						height: 0;
+						overflow: hidden;
 					}
 				}
 			}

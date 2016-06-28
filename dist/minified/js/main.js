@@ -2287,6 +2287,8 @@ define(function (require){
 		var ret = [];
 
 		ret.push('<a class="menu-item"><i class="fa fa-file"></i> File</a>');
+		ret.push('<a class="menu-item"><i class="fa fa-eye"></i> View</a>');
+		ret.push('<a class="menu-item"><i class="fa fa-cog"></i> Settings</a>');
 		ret.push('<a class="menu-item"><i class="fa fa-question-circle-o"></i> Help</a>');
 
 		return ret.join('');
