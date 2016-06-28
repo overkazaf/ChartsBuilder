@@ -14,13 +14,20 @@
 		</toolbar>
 		<view>
 			<control id="control">
-				<button id="addLayout" class="btn btn-default">Add Layout</button>
-				<button class="btn btn-success">Animation</button>
-				<button class="btn btn-info">Action</button>
-				<button class="btn btn-disabled">Echarts</button>
-				<button class="btn btn-warning">Data Binding</button>
-				<button class="btn btn-danger">Parse CSV</button>
-				<button class="btn btn-inverse">component</button>
+				<ul class="accordion">
+					<li class="accordion-item">
+						<h3>Animation</h3>
+						<div class="accordion-container">
+							<button id="addLayout" class="btn btn-default">Add Layout</button>
+							<button class="btn btn-success">Animation</button>
+							<button class="btn btn-info">Action</button>
+							<button class="btn btn-disabled">Echarts</button>
+							<button class="btn btn-warning">Data Binding</button>
+							<button class="btn btn-danger">Parse CSV</button>
+							<button class="btn btn-inverse">component</button>
+						</div>
+					</li>
+				</ul>
 			</control>
 			<playground id="playGround" class="gridster">
 				<ul></ul>

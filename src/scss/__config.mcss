@@ -1,0 +1,19 @@
+@mixin trans($desc){
+   transition: $desc;
+   -webkit-transition: $desc;
+   -moz-transition: $desc;
+   -ms-transition: $desc;
+   -o-transition: $desc;
+}
+
+@mixin borderRadius ($px:5px) {
+	border-radius:$px;
+	-webkit-border-radius:$px;
+	-moz-border-radius:$px;
+	-ms-border-radius:$px;
+	-o-border-radius:$px;
+}
+
+@function px2rem ($px, $fontBase:16) {
+	@return $px / $fontBase * 1rem;
+}
