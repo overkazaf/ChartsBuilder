@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta http-equiv="X-UA-Compatible" content="Chrome=1;IE=Edge;">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="renderer" content="webkit">
 	<title>ChartBuilder</title>
 	<link rel="stylesheet" type="text/css" href="dist/minified/css/jquery.gridster.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/minified/css/app.css">
 	<link rel="stylesheet" type="text/css" href="dist/minified/css/component.css">
+	<link rel="stylesheet" type="text/css" href="dist/minified/css/animate.css">
 </head>
 <body>
 	<app>
@@ -16,15 +21,25 @@
 			<control id="control">
 				<ul class="accordion">
 					<li class="accordion-item">
-						<h3 class="accordion-title">Animation<span class="dir-icon fa fa-angle-double-right"></span></h3>
+						<h3 class="accordion-title">Layouts<span class="dir-icon fa fa-angle-double-right"></span></h3>
 						<div class="accordion-container">
 							<button id="addLayout" class="btn btn-default">Add Layout</button>
-							<button class="btn btn-success">Animation</button>
+							<button id="addAnimation" class="btn btn-success">Animation</button>
 							<button class="btn btn-info">Action</button>
 							<button class="btn btn-disabled">Echarts</button>
 							<button class="btn btn-warning">Data Binding</button>
 							<button class="btn btn-danger">Parse CSV</button>
 							<button class="btn btn-inverse">component</button>
+						</div>
+					</li>
+
+					<li class="accordion-item">
+						<h3 class="accordion-title">Animation<span class="dir-icon fa fa-angle-double-right"></span></h3>
+						<div class="accordion-container">
+							<ul class="anim-list">
+								<li class="anim-list-item"></li>
+								<li class="anim-list-item"></li>
+							</ul>
 						</div>
 					</li>
 
@@ -71,18 +86,7 @@
 					</li>
 
 
-					<li class="accordion-item">
-						<h3 class="accordion-title">Layouts<span class="dir-icon fa fa-angle-double-right"></span></h3>
-						<div class="accordion-container">
-							<button id="addLayout" class="btn btn-default">Add Layout</button>
-							<button class="btn btn-success">Animation</button>
-							<button class="btn btn-info">Action</button>
-							<button class="btn btn-disabled">Echarts</button>
-							<button class="btn btn-warning">Data Binding</button>
-							<button class="btn btn-danger">Parse CSV</button>
-							<button class="btn btn-inverse">component</button>
-						</div>
-					</li>
+					
 				</ul>
 			</control>
 			<playground id="playGround" class="gridster">

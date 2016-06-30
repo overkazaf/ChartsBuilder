@@ -55,6 +55,16 @@ define(function (require){
 
 				gridster.add_widget.apply(gridster, widget);
 			});
+
+
+			$('#addAnimation').on('click', function () {
+				var $first = $('.gridster > ul').find('li:first');
+				$first.addClass('animated bounceOutLeft');
+
+				$first.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (){
+					$(this).removeClass('animated bounceOutLeft');
+				});
+			});
 		},
 		watch : function (el) {
 
