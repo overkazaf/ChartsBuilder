@@ -11,7 +11,6 @@ define(function (require){
 		this.__options = options || __defaults;
 		this.init();
 	};
- 
 
 	function toolbarTpl () {
 		var ret = [];
