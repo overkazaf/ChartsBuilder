@@ -29,7 +29,6 @@ define(function (require){
 			var opt = this.__options;
 			var $el = $('#' + opt.id);
 			$el.html(opt.template);
-
 		}
 	};
 
