@@ -17,7 +17,7 @@ define(
 		'Dispatcher'
 	], function (
 		$, 
-		gridster, 
+		gridster,
 		ToolBar, 
 		ControllerPanel, 
 		PlayGround, 
