@@ -19,7 +19,7 @@ define(
 		$, 
 		gridster,
 		ToolBar, 
-		ControllerPanel, 
+		ControlPanel, 
 		PlayGround, 
 		Dispatcher) {
 	
